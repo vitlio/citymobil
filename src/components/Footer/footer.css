@@ -1,0 +1,26 @@
+.footer__main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background: #d4d5d6;
+  height: 68px;
+}
+.footer-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 44px;
+  color: #707070;
+}
+@media (max-width: 425px) {
+  .footer-title {
+    font-size: 12px;
+  }
+  .footer__main {
+    height: 34px;
+  }
+}

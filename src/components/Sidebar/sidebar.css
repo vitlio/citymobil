@@ -1,0 +1,23 @@
+.sidebar__main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 0;
+  min-height: calc(100vh - 68px);
+  background: #e4e5e6;
+  padding-left: 28px;
+  padding-right: 25px;
+}
+.sidebar-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 44px;
+  color: #707070;
+}
+@media (max-width: 425px) {
+  .sidebar-title {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,108 @@
+.table-main {
+  display: block;
+  width: 100%;
+  padding: 32px 40px;
+  padding-bottom: 120px;
+}
+.table-titles {
+  width: 100%;
+  display: flex;
+}
+.title-name {
+  width: calc(100% / 8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  background: rgba(240, 242, 244, 0.5);
+  border-left: 1px solid #dee5eb;
+  border-top: 1px solid #dee5eb;
+  color: #7b8395;
+  font-family: IBM Plex Mono;
+  font-style: normal;
+  font-weight: 500;
+  padding: 16px 10px;
+}
+.title-name:last-child {
+  border-right: 1px solid #dee5eb;
+}
+.cars {
+  width: calc(100% / 8);
+  text-align: center;
+  box-sizing: border-box;
+  background: #ffffff;
+  border-left: 1px solid #dee5eb;
+  border-bottom: 1px solid #dee5eb;
+  color: #1f232e;
+  font-family: IBM Plex Mono;
+  font-style: normal;
+  font-weight: 400;
+  padding: 12px 0;
+}
+.cars:first-child {
+  text-align: start;
+  padding-left: 16px;
+}
+.cars:last-child {
+  border-right: 1px solid #dee5eb;
+}
+.table-cars {
+  width: 100%;
+  display: flex;
+}
+.sort-arrow {
+  margin: 5px 5px 0 5px;
+  cursor: pointer;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+}
+.sort-arrow-toggle {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+.chosen-car {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 42px;
+  width: 100%;
+  background-color: rgba(240, 242, 244, 0.5);
+  border: 1px solid #dee5eb;
+  box-sizing: border-box;
+  box-shadow: inset -1px 0px 0px rgba(198, 209, 221, 0.5);
+  color: #7b8395;
+  padding-left: 16px;
+  margin-top: 16px;
+  font-family: IBM Plex Mono;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+}
+.chose {
+  cursor: pointer;
+}
+@media (max-width: 425px) {
+  .table-main {
+    padding-bottom: 50px;
+  }
+  .title-name {
+    font-size: 6px;
+  }
+  .cars {
+    font-size: 6px;
+  }
+  .cars:first-child {
+    padding-left: 1px;
+  }
+  .chosen-car {
+    font-size: 6px;
+    height: 21px;
+  }
+}
